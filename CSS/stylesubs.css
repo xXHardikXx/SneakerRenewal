@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    background-color: #1b1b1b ;
+
+}
+
+.logo{
+    float: left;
+    display: flex;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .links li{
+    list-style: none;
+}
+
+nav .links a{
+    display: block;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 32%;
+   
+}
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+.subsButton{
+    padding: 9px 25px ;
+    background-color: white;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 1000;
+    font-size: 18   px;
+}
+
+.subsButton:hover{
+    background-color: #1b1b1b;
+    color: white;
+}
+body{
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    height: 60%;
+    background: rgb(255, 255, 255);
+    padding: 0 28px;
+    top: 30%;
+    margin: -100px 100px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: solid 1px black;
+}
+
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box label{
+    width: 95%;
+    color: #929292;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+select{
+    width: 95%;
+    color: #929292;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+    border-radius: 7px;
+    height: 40px;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.terms-condition{
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.terms-condition,
+.form-submit-btn input{
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background: black;
+}
+
+.form-submit-btn input:hover{
+    background: white
+}
+#register:hover{
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+footer{
+    margin-top: 800px;
+    background: rgb(255, 255, 255);
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media(max-width:768px){
+
+    .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links{
+        
+        float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+    }
+
+    nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+    nav .icon-burger{
+        display: block;
+    }
+
+    .container{
+        min-width: 280px;
+        min-height: 280px
+    }
+
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .terms-condition{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .user-info::-webkit-scrollbar{width: 0;}
+}
+
