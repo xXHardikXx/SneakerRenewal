@@ -7,6 +7,8 @@
     <title>Subscribe</title>
     <link rel="stylesheet" href="CSS\stylesubs.css">
     <script  src="script.js" defer></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body> 
     <div class="navbar">
@@ -14,14 +16,14 @@
             <input type="checkbox" id="nav-toggle">
 
             <div class="logo">
-                <img src="assets\logo2.png" class= "logoimage"alt="Logo" height="70px" >
+                <img id="logoimg" src="assets\logo2.png" class= "logoimage"alt="Logo" height="50px" >
             </div>
             <ul class="links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="shoes.html">Sneakers</a></li>
                 <li><a href="aboutus.html">About</a></li>
                 <li><a href="events.html">Events</a></li>
-                <button class="subsButton" type="button"onclick="window.location.href = 'subscribe.html';">Subscribe</button>
+                <button  class="subsButton" type="button" onclick="window.location.href = 'subscribe.html';">Sign Up</button>
             </ul>
            <label for="nav-toggle" class="icon-burger">
                 <div class="line"></div>
@@ -29,62 +31,76 @@
                 <div class="line"></div>
            </label>
         </nav>
-        </div>
-    <div class="container">
-        <h1 class="form-title">Subscribe</h1>
-        <form id="form">
-            <div class="user-info">
-                <div class="input-box">
-                    <label for="name">Full Name</label>
-                    <input type="text"
-                            id="name"
-                            name="fullName"
-                            placeholder="Enter Full Name" required/>
+    </div>
+    <div class="wholelogin">
+        <div class="login">
+            <div class="login__content">
+                <div class="login__img">
+                    <img src="assets/assetsCard/img-login.svg" alt="">
                 </div>
-                <div class="input-box">
-                    <label for="email">Email</label>
-                    <input type="text"
-                            id="email"
-                            name="email"
-                            placeholder="Enter Email"required/>
-                </div>
-                <div class="input-box">
-                    <label for="Phone">Phone Number</label>
-                    <input type="text"
-                            id="phoneNumber"
-                            name="phoneNumber"
-                            placeholder="Enter Phone Number"required/>
-                </div>
-                <div class="input-box">
-                    <label for="Country">Country</label>    
-                    <select id="country" name="country" class="form-control">
-                        <option value="Default">Select a country</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="India">India</option>
-                        <option value="Afghanistan">Afghanistan</option>
-                        <option value="America">America</option>
-                        <option value="UK">UK</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Japan">Japan</option>
-                    </select>
 
-                </div>
-                <div class="terms-condition">
-                    <div class="terms1"></div>
-                        <input type="checkbox" name="terms" id="termscons">
-                        <label id="terms2"for="terms&condition">Are you agree with terms and conditions</label>
-                    </div>
-                    <br>
-                    <p id="error" style="color: red; display: none;"></p>
-                    <div class="form-submit-btn">
-                        
-                        <input  type="submit" value="Register">
-                    </div>
+                <div class="login__forms">
+                    <form action="" class="login__registre" id="login-in">
+                        <h1 class="login__title">Sign In</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input">
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input">
+                        </div>
+
+                        <a href="#" class="login__forgot">Forgot password?</a>
+
+                        <a href="#" class="login__button">Sign In</a>
+
+                        <div>
+                            <span class="login__account">Don't have an Account ?</span>
+                            <span class="login__signin" id="sign-up">Sign Up</span>
+                        </div>
+                    </form>
+
+                    <form action="" class="login__create none" id="login-up">
+                        <h1 class="login__title">Create Account</h1>
+    
+                        <div class="login__box">
+                            <i class='bx bx-user login__icon'></i>
+                            <input type="text" placeholder="Username" class="login__input">
+                        </div>
+    
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input">
+                        </div>
+
+                        <a href="#" class="login__button">Sign Up</a>
+
+                        <div>
+                            <span class="login__account">Already have an Account ?</span>
+                            <span class="login__signup" id="sign-in">Sign In</span>
+                        </div>
+
+                        <div class="login__social">
+                            <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+
+        <!--===== MAIN JS =====-->
+        <script src="script.js"></script>
+    </div>    
     <footer class="footer">
         <div class="footer-content">
             <h3>SneakerRenewal</h3>

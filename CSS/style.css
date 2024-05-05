@@ -324,8 +324,4 @@ footer{
     .event-section .section-content .cards{
         grid-template-columns: 1fr;
     }
-
-    footer{
-        ;
-    }
 }
