@@ -78,7 +78,7 @@ form.addEventListener("submit", (e)=>{
     e.preventDefault();
     formSubmit();
 })
-var img = document.getElementById('img');
+var img = document.getElementById('slider-wrapper');
 
 var slides=['slider1.png','slider2.png', 'slider3.png'];
 
