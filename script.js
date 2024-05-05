@@ -14,6 +14,8 @@ signUp.addEventListener('click', ()=>{
     loginIn.classList.toggle('none')
     loginUp.classList.toggle('block')
 })
+<<<<<<< HEAD
+=======
 
 signIn.addEventListener('click', ()=>{
     // Remove classes first if they exist
@@ -24,3 +26,4 @@ signIn.addEventListener('click', ()=>{
     loginIn.classList.toggle('block')
     loginUp.classList.toggle('none')
 })
+>>>>>>> 6a716a71d21a7b0624b65532cf8fb1d4e360fe31
