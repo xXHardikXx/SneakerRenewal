@@ -78,21 +78,3 @@ form.addEventListener("submit", (e)=>{
     e.preventDefault();
     formSubmit();
 })
-var img = document.getElementById('slider-wrapper');
-
-var slides=['slider1.png','slider2.png', 'slider3.png'];
-
-var Start=0;
-
-function slider(){
-    if(Start<slides.length){
-        Start=Start+1;
-    }
-    else{
-        Start=1;
-    }
-    console.log(img);
-    img.innerHTML = "<img src="+slides[Start-1]+">";
-   
-}
-setInterval(slider,2000);
